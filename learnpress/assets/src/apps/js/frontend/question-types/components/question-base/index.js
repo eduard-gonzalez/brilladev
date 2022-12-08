@@ -204,8 +204,8 @@ class QuestionBase extends Component {
 
 		return this.maybeShowCorrectAnswer() && (
 			<div className={ `question-response` + ( isCorrect ? ' correct' : ' incorrect' ) }>
-				<span className="label">{ isCorrect ? __( 'Correct', 'learnpress' ) : __( 'Incorrect', 'learnpress' ) }</span>
-				<span className="point">{ sprintf( __( '%d/%d point', 'learnpress' ), isCorrect ? question.point : 0, question.point ) }</span>
+				<span className="label">{ isCorrect ? __( 'Correcto', 'learnpress' ) : __( 'Incorrecto', 'learnpress' ) }</span>
+				<span className="point">{ sprintf( __( '%d/%d puntos', 'learnpress' ), isCorrect ? question.point : 0, question.point ) }</span>
 			</div>
 		);
 	};

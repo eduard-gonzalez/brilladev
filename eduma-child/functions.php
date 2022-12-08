@@ -454,16 +454,14 @@ function add_css_user_logged_in() {
             .course-item {
                 display: none !important;
             }
+            li.students-feature{
+                display: none !important;
+            }
+            li.skill-feature{
+                display: none !important;
+            }
         </style>
         <?php
     }
 }
 
-
-/* curriculum count question text learnpress translated */ 
-add_filter( 'learn-press/quiz/curriculum-item-text', 'my_quiz_curriculum_item_text', 10, 2 );
-function my_quiz_curriculum_item_text( $text, $quiz ) {
-    $count = $quiz->count_questions();
-    $text = sprintf( _n( '%d pregunta', '%d preguntas', $count, 'learnpress' ), $count );
-    return $text;
-}

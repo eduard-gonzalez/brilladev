@@ -73,10 +73,10 @@ class QuestionFillInBlanks extends QuestionBase {
 		}
 		return this.maybeShowCorrectAnswer() && (
 			<div className="question-response correct">
-				<span className="label">{ __( 'Points', 'learnpress' ) }</span>
-				<span className="point">{ `${ getMark }/${ question.point } ${ __( 'point', 'learnpress' ) }` }</span>
-				<span className="lp-fib-note"><span style={ { background: '#00adff' } }></span>{ __( 'Correct', 'learnpress' ) }</span>
-				<span className="lp-fib-note"><span style={ { background: '#d85554' } }></span>{ __( 'Incorrect', 'learnpress' ) }</span>
+				<span className="label">{ __( 'Puntos', 'learnpress' ) }</span>
+				<span className="point">{ `${ getMark }/${ question.point } ${ __( 'puntos', 'learnpress' ) }` }</span>
+				<span className="lp-fib-note"><span style={ { background: '#00adff' } }></span>{ __( 'Correcto', 'learnpress' ) }</span>
+				<span className="lp-fib-note"><span style={ { background: '#d85554' } }></span>{ __( 'Incorrecto', 'learnpress' ) }</span>
 			</div>
 		);
 	};

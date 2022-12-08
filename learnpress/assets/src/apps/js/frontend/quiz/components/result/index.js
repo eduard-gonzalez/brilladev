@@ -195,23 +195,23 @@ const Result = () => {
 					<p>{ results.timeSpend }</p>
 				</li>
 				<li className="result-statistic-field result-point">
-					<span>{ __( 'Points', 'learnpress' ) }</span>
+					<span>{ __( 'Puntaje', 'learnpress' ) }</span>
 					<p>{ results.userMark } / { results.mark }</p>
 				</li>
 				<li className="result-statistic-field result-questions">
-					<span>{ __( 'Questions', 'learnpress' ) }</span>
+					<span>{ __( 'Preguntas', 'learnpress' ) }</span>
 					<p>{ results.questionCount }</p>
 				</li>
 				<li className="result-statistic-field result-questions-correct">
-					<span>{ __( 'Correct', 'learnpress' ) }</span>
+					<span>{ __( 'Correctas', 'learnpress' ) }</span>
 					<p>{ results.questionCorrect }</p>
 				</li>
 				<li className="result-statistic-field result-questions-wrong">
-					<span>{ __( 'Wrong', 'learnpress' ) }</span>
+					<span>{ __( 'Errores', 'learnpress' ) }</span>
 					<p>{ results.questionWrong }</p>
 				</li>
 				<li className="result-statistic-field result-questions-skipped">
-					<span>{ __( 'Skipped', 'learnpress' ) }</span>
+					<span>{ __( 'Saltadas', 'learnpress' ) }</span>
 					<p>{ results.questionEmpty }</p>
 				</li>
 			</ul>

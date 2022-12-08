@@ -41,7 +41,7 @@ const Modal = ( { children } ) => {
 							<span>{ __( 'OK', 'learnpress' ) }</span>
 						</button>
 						<button className="lp-button modal-button-cancel" onClick={ dataConfirm( 'no' ) }>
-							<span>{ __( 'Cancel', 'learnpress' ) }</span>
+							<span>{ __( 'Cancelar', 'learnpress' ) }</span>
 						</button>
 					</div>
 				</div>

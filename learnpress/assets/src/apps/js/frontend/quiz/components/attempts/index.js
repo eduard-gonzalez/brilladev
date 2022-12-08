@@ -12,7 +12,7 @@ const Attempts = () => {
 	return (
 		! hasAttempts ? false : <>
 			<div className="quiz-attempts">
-				<h4 className="attempts-heading">{ __( 'Last Attempt', 'learnpress' ) }</h4>
+				<h4 className="attempts-heading">{ __( 'Ultimo intento', 'learnpress' ) }</h4>
 
 				{ hasAttempts && (
 					<table>
@@ -20,9 +20,9 @@ const Attempts = () => {
 							<tr>
 								<th className="quiz-attempts__questions">{ __( 'Questions', 'learnpress' ) }</th>
 								<th className="quiz-attempts__spend">{ __( 'Time spent', 'learnpress' ) }</th>
-								<th className="quiz-attempts__marks">{ __( 'Marks', 'learnpress' ) }</th>
-								<th className="quiz-attempts__grade">{ __( 'Passing grade', 'learnpress' ) }</th>
-								<th className="quiz-attempts__result">{ __( 'Result', 'learnpress' ) }</th>
+								<th className="quiz-attempts__marks">{ __( 'Respondidas', 'learnpress' ) }</th>
+								<th className="quiz-attempts__grade">{ __( 'Puntaje', 'learnpress' ) }</th>
+								<th className="quiz-attempts__result">{ __( 'Resultado', 'learnpress' ) }</th>
 							</tr>
 						</thead>
 						<tbody>

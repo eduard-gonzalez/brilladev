@@ -227,9 +227,9 @@ class QuestionBase extends _wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Compo
         className: `question-response` + (isCorrect ? ' correct' : ' incorrect')
       }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         className: "label"
-      }, isCorrect ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Correct', 'learnpress') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Incorrect', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
+      }, isCorrect ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Correcto', 'learnpress') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Incorrectos', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         className: "point"
-      }, sprintf((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('%d/%d point', 'learnpress'), isCorrect ? question.point : 0, question.point)));
+      }, sprintf((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('%d/%d puntos', 'learnpress'), isCorrect ? question.point : 0, question.point)));
     });
 
     const {
@@ -378,21 +378,21 @@ class QuestionFillInBlanks extends _question_base__WEBPACK_IMPORTED_MODULE_3__["
         className: "question-response correct"
       }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         className: "label"
-      }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Points', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
+      }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Puntos', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         className: "point"
-      }, `${getMark}/${question.point} ${(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('point', 'learnpress')}`), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
+      }, `${getMark}/${question.point} ${(0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('puntos', 'learnpress')}`), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         className: "lp-fib-note"
       }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         style: {
           background: '#00adff'
         }
-      }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Correct', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
+      }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Correctos', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         className: "lp-fib-note"
       }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("span", {
         style: {
           background: '#d85554'
         }
-      }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Incorrect', 'learnpress')));
+      }), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Incorrecto', 'learnpress')));
     });
 
     (0,_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "convertInputField", option => {

@@ -31,15 +31,15 @@ const Attempts = () => {
     className: "quiz-attempts"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
     className: "attempts-heading"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Last Attempt', 'learnpress')), hasAttempts && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("table", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("thead", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tr", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("th", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Ultimo intento', 'learnpress')), hasAttempts && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("table", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("thead", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tr", null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("th", {
     className: "quiz-attempts__questions"
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Questions', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("th", {
     className: "quiz-attempts__spend"
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Time spent', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("th", {
     className: "quiz-attempts__marks"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Marks', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("th", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Respondidas', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("th", {
     className: "quiz-attempts__grade"
-  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Passing grade', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("th", {
+  }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Puntaje', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("th", {
     className: "quiz-attempts__result"
   }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Result', 'learnpress')))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tbody", null, attempts.map((row, key) => {
     // Re-write value to attempts.timeSpend
@@ -341,7 +341,7 @@ class Buttons extends _wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Component 
           isOpen
         } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_2__.select)('learnpress/modal');
 
-        if ('no' === confirm((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Are you sure you want to retake the quiz?', 'learnpress'), this.startQuiz)) {
+        if ('no' === confirm((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('¿Estás seguro de retomar el examen?', 'learnpress'), this.startQuiz)) {
           !isOpen() && btn && btn.removeAttribute('disabled');
           return;
         }
@@ -436,7 +436,7 @@ class Buttons extends _wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Component 
         confirm
       } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_2__.select)('learnpress/modal');
 
-      if ('no' === confirm((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Are you sure to submit the quiz?', 'learnpress'), this.submit)) {
+      if ('no' === confirm((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('¿Estás seguro de enviar el examen?', 'learnpress'), this.submit)) {
         return;
       }
 
@@ -493,7 +493,7 @@ class Buttons extends _wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Component 
       className: "page-numbers prev",
       "data-type": "question-navx",
       onClick: this.nav('prev')
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Prev', 'learnpress')), numbers.map(number => {
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Anterior', 'learnpress')), numbers.map(number => {
       number = number + 1;
 
       if (number === args.currentPage) {
@@ -524,7 +524,7 @@ class Buttons extends _wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Component 
       className: "page-numbers next",
       "data-type": "question-navx",
       onClick: this.nav('next')
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Next', 'learnpress')));
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Siguiente', 'learnpress')));
   }
 
   render() {
@@ -593,13 +593,13 @@ class Buttons extends _wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Component 
     }, 'started' === status && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.Fragment, null, ('infinity' === questionNav || this.isLast()) && !isReviewing && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("button", {
       className: "lp-button submit-quiz",
       onClick: this.submit
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Finish Quiz', 'learnpress'))), isReviewing && showReview && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("button", {
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Finalizar Examen', 'learnpress'))), isReviewing && showReview && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("button", {
       className: "lp-button back-quiz",
       onClick: this.setQuizMode('')
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Result', 'learnpress')), 'completed' === status && showReview && !isReviewing && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("button", {
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Resultado', 'learnpress')), 'completed' === status && showReview && !isReviewing && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("button", {
       className: "lp-button review-quiz",
       onClick: this.setQuizMode('reviewing')
-    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Review', 'learnpress')))), this.props.message && this.props.success !== true && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
+    }, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Revisar', 'learnpress')))), this.props.message && this.props.success !== true && (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)("div", {
       className: "learn-press-message error"
     }, this.props.message));
   }
@@ -1659,11 +1659,11 @@ const Result = () => {
     className: "result-statistic-field result-questions"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Questions', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, results.questionCount)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
     className: "result-statistic-field result-questions-correct"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Correct', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, results.questionCorrect)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Correctas', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, results.questionCorrect)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
     className: "result-statistic-field result-questions-wrong"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Wrong', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, results.questionWrong)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Errores', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, results.questionWrong)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("li", {
     className: "result-statistic-field result-questions-skipped"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Skipped', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, results.questionEmpty))));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__.__)('Saltadas', 'learnpress')), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, results.questionEmpty))));
 
   function timeDifference(earlierDate, laterDate) {
     const oDiff = new Object(); //  Calculate Differences
@@ -1810,7 +1810,7 @@ const Status = () => {
       confirm
     } = (0,_wordpress_data__WEBPACK_IMPORTED_MODULE_1__.select)('learnpress/modal');
 
-    if ('no' === confirm((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Are you sure to submit the quiz?', 'learnpress'), submit)) {
+    if ('no' === confirm((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Esta seguro de finalizar el examen?', 'learnpress'), submit)) {
       return;
     }
 
@@ -1846,12 +1846,12 @@ const Status = () => {
 
   if (end < questionsCount) {
     if (questionsPerPage > 1) {
-      indexHtml = (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.sprintf)((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Question <span>%d to %d of %d</span>', 'learnpress'), start, end, questionsCount);
+      indexHtml = (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.sprintf)((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Pregunta <span>%d de %d of %d</span>', 'learnpress'), start, end, questionsCount);
     } else {
-      indexHtml = (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.sprintf)((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Question <span>%d of %d</span>', 'learnpress'), start, questionsCount);
+      indexHtml = (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.sprintf)((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Pregunta <span>%d de %d</span>', 'learnpress'), start, questionsCount);
     }
   } else {
-    indexHtml = (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.sprintf)((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Question <span>%d to %d</span>', 'learnpress'), start, end);
+    indexHtml = (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.sprintf)((0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Pregunta <span>%d de %d</span>', 'learnpress'), start, end);
   }
 
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -1869,7 +1869,7 @@ const Status = () => {
     className: "lp-button",
     id: "button-submit-quiz",
     onClick: submit
-  }, !submitting ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Finish Quiz', 'learnpress') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Submitting...', 'learnpress'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_timer__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
+  }, !submitting ? (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Finalizar Examen', 'learnpress') : (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__.__)('Enviando...', 'learnpress'))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_timer__WEBPACK_IMPORTED_MODULE_2__["default"], null))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Status);

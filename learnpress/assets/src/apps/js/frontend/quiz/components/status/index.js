@@ -64,7 +64,7 @@ const Status = () => {
 	const submit = () => {
 		const { confirm } = select( 'learnpress/modal' );
 
-		if ( 'no' === confirm( __( 'Are you sure to submit the quiz?', 'learnpress' ), submit ) ) {
+		if ( 'no' === confirm( __( '¿Estás seguro de enviar el examen?', 'learnpress' ), submit ) ) {
 			return;
 		}
 
@@ -102,12 +102,12 @@ const Status = () => {
 
 	if ( end < questionsCount ) {
 		if ( questionsPerPage > 1 ) {
-			indexHtml = sprintf( __( 'Question <span>%d to %d of %d</span>', 'learnpress' ), start, end, questionsCount );
+			indexHtml = sprintf( __( 'Pregunta <span>%d a %d de %d</span>', 'learnpress' ), start, end, questionsCount );
 		} else {
-			indexHtml = sprintf( __( 'Question <span>%d of %d</span>', 'learnpress' ), start, questionsCount );
+			indexHtml = sprintf( __( 'Pregunta <span>%d de %d</span>', 'learnpress' ), start, questionsCount );
 		}
 	} else {
-		indexHtml = sprintf( __( 'Question <span>%d to %d</span>', 'learnpress' ), start, end );
+		indexHtml = sprintf( __( 'Pregunta <span>%d hasta %d</span>', 'learnpress' ), start, end );
 	}
 
 	return (
@@ -116,7 +116,7 @@ const Status = () => {
 				<div className="questions-index" dangerouslySetInnerHTML={ { __html: indexHtml } } />
 
 				<div className="current-point">
-					{ sprintf( __( 'Earned Point: %s', 'learnpress' ), userMark ) }
+					{ sprintf( __( 'Puntaje: %s', 'learnpress' ), userMark ) }
 				</div>
 
 				<div>
@@ -125,7 +125,7 @@ const Status = () => {
 							className="lp-button" id="button-submit-quiz"
 							onClick={ submit }
 						>
-							{ ! submitting ? __( 'Finish Quiz', 'learnpress' ) : __( 'Submitting...', 'learnpress' ) }
+							{ ! submitting ? __( 'Finalizar Examen', 'learnpress' ) : __( 'Enviando...', 'learnpress' ) }
 						</button>
 					</div>
 

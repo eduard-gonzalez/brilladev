@@ -102,7 +102,7 @@ class Buttons extends Component {
 
 		const { confirm } = select( 'learnpress/modal' );
 
-		if ( 'no' === confirm( __( 'Are you sure to submit the quiz?', 'learnpress' ), this.submit ) ) {
+		if ( 'no' === confirm( __( 'Estás seguro de enviar el examen?', 'learnpress' ), this.submit ) ) {
 			return;
 		}
 		submitQuiz();
@@ -156,7 +156,7 @@ class Buttons extends Component {
 						data-type="question-navx"
 						onClick={ this.nav( 'prev' ) }
 					>
-						{ __( 'Prev', 'learnpress' ) }
+						{ __( 'Anterior', 'learnpress' ) }
 					</button>
 				) }
 
@@ -200,7 +200,7 @@ class Buttons extends Component {
 						data-type="question-navx"
 						onClick={ this.nav( 'next' ) }
 					>
-						{ __( 'Next', 'learnpress' ) }
+						{ __( 'Siguiente', 'learnpress' ) }
 					</button>
 				) }
 			</div>

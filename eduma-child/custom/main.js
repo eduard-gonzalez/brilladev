@@ -8,7 +8,7 @@ jQuery(function($){
     /* on click jquery oprevent */
     $('.thim-login-popup > .login').on('click', function(e) {
         $('div#thim-popup-login').hide();
-        window.location.href = "/iniciar-sesion/";
+        window.location.href = "/acceder/";
     });
     $('.thim-login-popup > .register').on('click', function(e) {
         $('div#thim-popup-login').hide();

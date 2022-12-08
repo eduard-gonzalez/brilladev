@@ -7544,7 +7544,7 @@ msgid "You need to answer the question before checking the answer key."
 msgstr ""
 
 #: assets/js/dist/frontend/quiz.min.js:17
-msgid "Are you sure you want to retake the quiz?"
+msgid "¿Estás seguro de retomar el examen?"
 msgstr ""
 
 #: assets/js/dist/frontend/quiz.min.js:105
