@@ -16,6 +16,15 @@
 .col2-set.addresses {
     display: none;
 }
+.quiz-attempts .attempts-heading {
+    color: white;
+}
+.quiz-result .result-grade svg circle {
+    stroke: #f28c47;
+}
+input#billing_city {
+  display: none !important;
+}
 .wizard > .steps .disabled a
 {
 	color: white !important;
@@ -770,15 +779,46 @@ div#profile-content-order-details {
 .thim-ekits-menu__mobile .thim-ekits-menu__mobile__icon svg{
 	color:#ffffff !important;
 }
-/* headder registro*/
+/* header registro*/
 
 .elementor-15782 .elementor-element.elementor-element-5a15e2a .thim-link-login .register{
 	background-color:#ff9040!important;	
 	padding-right:20px !important;
-	padding-bottom:5px !important;
+	padding-left:20px !important;
+	padding-bottom:10px !important;
+	color:#fff !important;
+	margin-right:27px !important;
+	
+	
+ }
+.elementor-15782 .elementor-element.elementor-element-5a15e2a .thim-link-login a:last-child{
+		background-color:#ff9040!important;	
+	padding-right:20px !important;
+	padding-bottom:10px !important;
 	color:#fff !important;
 	margin-right:10px !important;
- }
+	border-radius:5px !important
+	
+}
+
+#menu-item-15813 a{
+			background-color:#ff9040!important;	
+	padding-right:20px !important;
+	padding-bottom:14px !important;
+	color:#fff !important;
+	margin-right:10px !important;
+	padding-top:7px !important;
+	padding-left:10px !important;
+	margin-top:4px !important;
+		border-radius:5px !important
+}
+
+.elementor-15782 .elementor-element.elementor-element-5a15e2a .thim-link-login a:first-child{
+	margin-right:20px !important;
+	padding-top:5px !important;
+	padding-bottom:10px !important;
+}
+
 	.elementor-15782 .elementor-element.elementor-element-5a15e2a .thim-link-login a:first-child {
 			background-color:#ff9040!important;	
 	padding-right:20px !important;
@@ -834,6 +874,11 @@ body.single-lp_course.logged-in #learn-press-course-curriculum ul.curriculum-sec
 .lp-overlay .lp-modal-dialog .lp-modal-content .lp-modal-header {
   background: #ea6225 !important;
 }
+
+.profile-certificates li.course .course-thumbnail{
+	border: none !important;
+}
+
 @media (max-width: 600px) {
 	/* LOGIN FORM */
 .learn-press-form-login {

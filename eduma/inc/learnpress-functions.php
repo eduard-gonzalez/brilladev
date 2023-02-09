@@ -579,7 +579,7 @@ if ( ! function_exists( 'thim_course_certificate' ) ) {
 			?>
 			<li class="cert-feature">
 				<i class="fa fa-rebel"></i>
-				<span class="label"><?php esc_html_e( 'Certificate', 'eduma' ); ?></span>
+				<span class="label"><?php esc_html_e( 'Certificate', 'eduma' ); ?>:</span>
 				<span
 					class="value"><?php echo ( get_post_meta( $course_id, '_lp_cert', true ) ) ? esc_html__( 'Yes', 'eduma' ) : esc_html__( 'No', 'eduma' ); ?></span>
 			</li>
@@ -661,23 +661,25 @@ if ( ! function_exists( 'thim_course_info' ) ) {
 
 				<li class="lectures-feature">
 					<i class="fa fa-files-o"></i>
-					<span class="label"><?php esc_html_e( 'Lectures', 'eduma' ); ?></span>
+					<span class="label"><?php esc_html_e( 'Lectures', 'eduma' ); ?>:</span>
 					<span
 						class="value"><?php echo $course->get_curriculum_items( 'lp_lesson' ) ? count( $course->get_curriculum_items( 'lp_lesson' ) ) : 0; ?></span>
 				</li>
 				<li class="quizzes-feature">
 					<i class="fa fa-puzzle-piece"></i>
-					<span class="label"><?php esc_html_e( 'Quizzes', 'eduma' ); ?></span>
+					<span class="label"><?php esc_html_e( 'Quizzes', 'eduma' ); ?>:</span>
 					<span
 						class="value"><?php echo $course->get_curriculum_items( 'lp_quiz' ) ? count( $course->get_curriculum_items( 'lp_quiz' ) ) : 0; ?></span>
 				</li>
 
-				<?php if ( ! empty( $course_duration ) ) : ?>
+				<?php 
+			$duration_value   = get_post_meta( $course_id, 'thim_course_duration', true );
+				if ( ! empty( $course_duration ) ) : ?>
 					<li class="duration-feature">
 						<i class="fa fa-clock-o"></i>
-						<span class="label"><?php esc_html_e( 'Duration', 'eduma' ); ?></span>
+						<span class="label"><?php esc_html_e( 'Duration', 'eduma' ); ?>:</span>
 						<span
-							class="value"><?php echo thim_get_post_translated_duration( $course_duration, esc_html__( 'Lifetime access', 'learnpress' ) ); ?></span>
+							class="value"><?php echo $duration_value; ?></span>
 					</li>
 				<?php endif; ?>
 
@@ -692,20 +694,20 @@ if ( ! function_exists( 'thim_course_info' ) ) {
 				<?php if ( ! empty( $course_language ) ) : ?>
 					<li class="language-feature">
 						<i class="fa fa-language"></i>
-						<span class="label"><?php esc_html_e( 'Language', 'eduma' ); ?></span>
+						<span class="label"><?php esc_html_e( 'Language', 'eduma' ); ?>:</span>
 						<span class="value"><?php echo esc_html( $course_language ); ?></span>
 					</li>
 				<?php endif; ?>
 				<li class="students-feature">
 					<i class="fa fa-users"></i>
-					<span class="label"><?php esc_html_e( 'Students', 'eduma' ); ?></span>
+					<span class="label"><?php esc_html_e( 'Students', 'eduma' ); ?>:</span>
 					<?php $user_count = $course->get_users_enrolled() ? $course->get_users_enrolled() : 0; ?>
 					<span class="value"><?php echo esc_html( $user_count ); ?></span>
 				</li>
 				<?php thim_course_certificate( $course_id ); ?>
 				<li class="assessments-feature">
 					<i class="fa fa-check-square-o"></i>
-					<span class="label"><?php esc_html_e( 'Assessments', 'eduma' ); ?></span>
+					<span class="label"><?php esc_html_e( 'Assessments', 'eduma' ); ?>:</span>
 					<span
 						class="value"><?php echo ( get_post_meta( $course_id, '_lp_course_result', true ) == 'evaluate_lesson' ) ? esc_html__( 'Yes', 'eduma' ) : esc_html__( 'Self', 'eduma' ); ?></span>
 				</li>
